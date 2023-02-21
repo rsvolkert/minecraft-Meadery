@@ -1,4 +1,4 @@
-/Users/ryan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.3-44.1.16_mapped_official_1.19.3/forge-1.19.3-44.1.16_mapped_official_1.19.3-recomp.jar
+/Users/ryan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.3-44.1.16_mapped_parchment_2023.02.05-1.19.3/forge-1.19.3-44.1.16_mapped_parchment_2023.02.05-1.19.3-recomp.jar
 /Users/ryan/.gradle/caches/forge_gradle/minecraft_repo/versions/1.19.3/client-extra.jar
 /Users/ryan/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.19.3-44.1.16/1484362e4e24dac255685ce71587d955d170346b/javafmllanguage-1.19.3-44.1.16.jar
 /Users/ryan/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.19.3-44.1.16/cc250beec41dfb19232e85eb961a8fe7a6ee8075/lowcodelanguage-1.19.3-44.1.16.jar
@@ -12,7 +12,7 @@
 /Users/ryan/.gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.1/1227f9e0666314f9de41477e3ec277e542ed7f7b/java-objc-bridge-1.1.jar
 /Users/ryan/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mergetool/1.1.5/f3da18e12c696d35a47c82cbb2cc8b5aa15e1154/mergetool-1.1.5-api.jar
 /Users/ryan/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar
-/Users/ryan/.gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.19.3/mapping-1.19.3-mapping.zip
+/Users/ryan/.gradle/caches/parchmentgradle/org/parchmentmc/data/parchment-1.19.3/2023.02.05/parchment-1.19.3-2023.02.05.zip
 /Users/ryan/.gradle/caches/modules-2/files-2.1/net.minecraftforge/coremods/5.0.1/386b00279628b105b2d507539c46e134e96f6237/coremods-5.0.1.jar
 /Users/ryan/.gradle/caches/modules-2/files-2.1/net.minecraftforge/forgespi/6.0.0/4a2004591666531f8b30d3402317b1ff6411bd3e/forgespi-6.0.0.jar
 /Users/ryan/.gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/8.0.4/272d240aa73f42195b2a68e2ebd8b701ecf41f63/accesstransformers-8.0.4.jar
