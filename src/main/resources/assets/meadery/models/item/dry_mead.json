@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "Clear Mead Bottle",
 	"textures": {
 		"1": "meadery:item/bottle_texture",
 		"2": "meadery:item/mead_texture",
