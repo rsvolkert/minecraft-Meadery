@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "meadery:block/clover_blossom"
+  },
+  "render_type": "cutout"
+}
