@@ -1,7 +1,6 @@
 package net.rvolkert.meadery;
 
-import net.rvolkert.meadery.block.ModBlocks;
-import net.rvolkert.meadery.block.entity.ModBlockEntities;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.rvolkert.meadery.item.ModCreativeModeTab;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,8 +22,11 @@ public class Meadery {
 
         ModItems.register(modEventBus);
 
-        ModBlocks.register(modEventBus);
-        ModBlockEntities.register(modEventBus);
+//        ModBlocks.register(modEventBus);
+//        ModBlockEntities.register(modEventBus);
+//
+//        ModRecipes.register(modEventBus);
+//        ModMenuTypes.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -42,7 +44,16 @@ public class Meadery {
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == ModCreativeModeTab.MEADERY_TAB) {
+            event.accept(ModItems.EMPTY_MEAD_BOTTLE);
+            event.accept(ModItems.DRY_MEAD);
+        }
 
+        if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.DRY_MEAD);
+        }
+
+        if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.EMPTY_MEAD_BOTTLE);
         }
     }
 }

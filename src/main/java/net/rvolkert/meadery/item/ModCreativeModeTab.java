@@ -17,6 +17,7 @@ public class ModCreativeModeTab {
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
         MEADERY_TAB = event.registerCreativeModeTab(new ResourceLocation(Meadery.MOD_ID, "meadery_tab"),
-                builder -> builder.icon(() -> new ItemStack(Items.HONEY_BOTTLE)).title(Component.literal("Meadery Tab")).build());
+                builder -> builder.icon(() -> new ItemStack(ModItems.DRY_MEAD.get()))
+                        .title(Component.literal("Meadery Tab")).build());
     }
 }
