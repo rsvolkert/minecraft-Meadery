@@ -1,6 +1,13 @@
 package net.rvolkert.meadery;
 
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FlowerPotBlock;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.rvolkert.meadery.block.ModBlocks;
 import net.rvolkert.meadery.item.ModCreativeModeTab;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,7 +29,7 @@ public class Meadery {
 
         ModItems.register(modEventBus);
 
-//        ModBlocks.register(modEventBus);
+        ModBlocks.register(modEventBus);
 //        ModBlockEntities.register(modEventBus);
 //
 //        ModRecipes.register(modEventBus);
@@ -39,13 +46,16 @@ public class Meadery {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CLOVER_BLOSSOM.getId(), ModBlocks.POTTED_CLOVER);
+        });
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if (event.getTab() == ModCreativeModeTab.MEADERY_TAB) {
             event.accept(ModItems.EMPTY_MEAD_BOTTLE);
             event.accept(ModItems.DRY_MEAD);
+            event.accept(ModBlocks.CLOVER_BLOSSOM);
         }
 
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS) {
@@ -54,6 +64,18 @@ public class Meadery {
 
         if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.EMPTY_MEAD_BOTTLE);
+        }
+
+        if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.CLOVER_BLOSSOM);
+        }
+    }
+
+    @Mod.EventBusSubscriber(modid = Meadery.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+
         }
     }
 }
