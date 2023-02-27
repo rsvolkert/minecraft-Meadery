@@ -5,6 +5,6 @@
     "minecraft:forest",
     "minecraft:taiga"
   ],
-  "features": "meadery:clover_placed",
+  "features": "meadery:clover_blossom_placed",
   "step": "vegetal_decoration"
 }

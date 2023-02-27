@@ -1,4 +1,7 @@
 {
   "item.meadery.mead_bottle_empty": "Mead Bottle",
-  "item.meadery.dry_mead": "Dry Mead"
+  "item.meadery.dry_mead": "Dry Mead",
+
+  "block.meadery.clover_blossom": "Clover Blossom",
+  "block.meadery.potted_clover": "Potted Clover"
 }
