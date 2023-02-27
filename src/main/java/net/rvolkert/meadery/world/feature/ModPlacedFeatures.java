@@ -14,7 +14,7 @@ import net.rvolkert.meadery.Meadery;
 import java.util.List;
 
 public class ModPlacedFeatures {
-    public static final ResourceKey<PlacedFeature> CLOVER_PLACED_KEY = createKey("clover_placed");
+    public static final ResourceKey<PlacedFeature> CLOVER_PLACED_KEY = createKey("clover_blossom_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
